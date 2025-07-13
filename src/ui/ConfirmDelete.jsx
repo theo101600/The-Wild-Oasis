@@ -20,13 +20,21 @@ const StyledConfirmDelete = styled.div`
   }
 `;
 
-function ConfirmDelete({ resourceName, onConfirm, disabled, onCloseModal }) {
+function ConfirmDelete({
+  resourceType,
+  resourceName,
+  onConfirm,
+  disabled,
+  onCloseModal,
+}) {
   return (
     <StyledConfirmDelete>
-      <Heading as="h3">Delete Cabin - {resourceName}</Heading>
+      <Heading as="h3">
+        Delete {resourceType} - {resourceName}
+      </Heading>
       <p>
-        Are you sure you want to delete this {resourceName} permanently? This
-        action cannot be undone.
+        Are you sure you want to delete this {resourceType} - {resourceName}{" "}
+        permanently? This action cannot be undone.
       </p>
 
       <div>
