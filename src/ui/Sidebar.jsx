@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
 import Uploader from "../data/Uploader";
+import { useUser } from "../features/authentication/useUser";
 
 const StyledSidebar = styled.aside`
   background-color: var(--color-grey-0);
@@ -15,11 +16,13 @@ const StyledSidebar = styled.aside`
 `;
 
 function Sidebar() {
+  const { isLoading, user, error } = useUser();
+  console.log(user.id);
   return (
     <StyledSidebar>
       <Logo />
       <MainNav />
-      <Uploader />
+      {user.id === "1be9853d-8deb-46be-a3f6-bb8b37008ecf" && <Uploader />}
     </StyledSidebar>
   );
 }
