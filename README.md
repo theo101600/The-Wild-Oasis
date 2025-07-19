@@ -4,7 +4,7 @@ A modern web application from Jonas Schmedtmann's Udemy course 'The Ultimate Rea
 
 A web app that allows users to manage cabins and bookings for a hotel/cabin accommodation business
 
-![screenshot](https://user-images.githubusercontent.com/.../your-screenshot.png)
+![screenshot](https://github.com/theo101600/The-Wild-Oasis/blob/main/public/screenshots/LightMode-002.png)
 
 ---
 
