@@ -16,8 +16,8 @@ const StyledSidebar = styled.aside`
 `;
 
 function Sidebar() {
-  const { isLoading, user, error } = useUser();
-  console.log(user.id);
+  const { user } = useUser();
+
   return (
     <StyledSidebar>
       <Logo />
