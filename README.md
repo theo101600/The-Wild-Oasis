@@ -1,33 +1,67 @@
-# The Wild Oasis
+# Wild Oasis
 
-A modern web application from Jonas Schmedtmann's Udemy course 'The Ultimate React Course 2025: React, Next.js, Redux & More'
+## Overview
 
-A web app that allows users to manage cabins and bookings for a hotel/cabin accommodation business
+A full-stack hotel management dashboard for small resorts or retreats. Staff members can log in, manage cabins, handle guest bookings, and track real-time metrics—all from a modern, responsive web application.
 
-![screenshot](https://user-images.githubusercontent.com/.../your-screenshot.png)
+### Login Info
 
----
+Email: `theo@example.com`
+Password: `password`
 
-## 🚀 Features
+![Wild Oasis Homepage ](https://gomfxmkebyzbqwrxvdkj.supabase.co/storage/v1/object/public/images//Wild-Oasis-Screenshots-001.png)
 
-- ✅ User authentication and authorization
-- 📊 Interactive dashboard with real-time updates
-- 🌙 Dark/light theme toggle
+## Features
 
----
+- Login system using Supabase Auth.
+- Add, edit, delete cabins with capacity and pricing info.
+- Checkin, delete guest bookings.
+- Visual dashboard to track occupancy rate, total sales, and revenue trends.
+- Light/dark mode toggle
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-**Frontend:**
+| **Category**           | **Technology / Package** | **Purpose / Functionality**                      |
+| ---------------------- | ------------------------ | ------------------------------------------------ |
+| **Frontend Framework** | `react`                  | Interactive component-based UI                   |
+| **State Management**   | `react-query`            | Server state management and caching              |
+| **Routing**            | `react-router-dom`       | Client-side navigation and route protection      |
+| **Styling**            | `styled-components`      | Theming, dark mode, and responsive layout        |
+| **Backend**            | `supabase`               | Auth, database (PostgreSQL), file storage        |
+| **Forms**              | `react-hook-form`        | Efficient form handling and validation           |
+| **Charts**             | `recharts`               | Visualize revenue, occupancy, and booking trends |
+| **Utilities**          | `date-fns`               | Date formatting and operations                   |
 
-- React
-- Styled Components
+## Project Structure
 
-**Backend:**
+```
+wild-oasis/
+├── public/
+├── src/
+│ ├── app/
+│ ├── features/
+│ │ ├── cabins/
+│ │ ├── bookings/
+│ │ ├── dashboard/
+│ │ ├── check-in-out/
+│ │ ├── authentication/
+│ │ └── settings/
+│ ├── pages/
+│ ├── ui/
+│ ├── services/
+│ ├── styles/
+│ ├── hooks/
+│ └── utils/
+├── package.json
+└── vite.config.js
 
-- Supabase
+```
 
-**Others:**
+## Gallery
 
-- React Query
-- Vite
+![Login page](https://gomfxmkebyzbqwrxvdkj.supabase.co/storage/v1/object/public/images//Wild-Oasis-Screenshots-001.png)
+![Dashboard page](https://gomfxmkebyzbqwrxvdkj.supabase.co/storage/v1/object/public/images//Wild-Oasis-Screenshots-002.png)
+![Bookings page](https://gomfxmkebyzbqwrxvdkj.supabase.co/storage/v1/object/public/images//Wild-Oasis-Screenshots-003.png)
+![Cabins page](https://gomfxmkebyzbqwrxvdkj.supabase.co/storage/v1/object/public/images//Wild-Oasis-Screenshots-004.png)
+![Register page](https://gomfxmkebyzbqwrxvdkj.supabase.co/storage/v1/object/public/images//Wild-Oasis-Screenshots-005.png)
+![Settings page](https://gomfxmkebyzbqwrxvdkj.supabase.co/storage/v1/object/public/images//Wild-Oasis-Screenshots-006.png)
